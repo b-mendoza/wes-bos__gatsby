@@ -1,0 +1,3 @@
+### NOTES
+
+**Hey!**. The command we want to run to build the application is called `gatsby build`. But because we want to use ES Modules with `gatsby`, we use a package called `esm`. One way to require it is to set the `NODE_OPTIONS` environmental variable to `-r esm`. Finally to make this work for windows users, we use the `cross-env` package. Hopefully once Node ES Modules are stable, we can bring this back to simple `gatsby build`
