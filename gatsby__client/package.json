@@ -1,9 +1,13 @@
 {
-  "name": "slicks-slices-frontend",
-  "private": true,
+  "author": {
+    "email": "bmendoza.dev@hotmail.com",
+    "name": "Bryan Mendoza"
+  },
   "description": "Slick Serves the Sweetest Slices",
-  "version": "0.1.0",
   "license": "MIT",
+  "name": "slicks-slices__frontend",
+  "private": true,
+  "version": "0.1.0",
   "scripts": {
     "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "clean": "gatsby clean",
