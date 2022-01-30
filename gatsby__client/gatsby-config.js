@@ -6,4 +6,4 @@ const gatsbyConfig = {
   jsxRuntime: 'automatic',
 };
 
-exports.module = gatsbyConfig;
+export default gatsbyConfig;
