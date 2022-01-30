@@ -8,6 +8,7 @@
     "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "clean": "gatsby clean",
     "develop": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
+    "format:write": "prettier -c --config .prettierrc . -w",
     "netlify": "netlify dev",
     "prebuild": "netlify-lambda install",
     "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
