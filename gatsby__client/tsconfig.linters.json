@@ -1,5 +1,10 @@
 {
   "compilerOptions": { "allowJs": true, "noEmit": true },
   "extends": "./tsconfig.json",
-  "include": [".eslintrc.js", "gatsby-config.js"]
+  "include": [
+    ".eslintrc.js",
+    "gatsby-browser.js",
+    "gatsby-config.js",
+    "gatsby-ssr.js"
+  ]
 }
