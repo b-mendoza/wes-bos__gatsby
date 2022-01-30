@@ -1,6 +1,6 @@
 // @ts-check
 
-/** @type {import("gatsby").GatsbyConfig} */
+/** @type {import('gatsby').GatsbyConfig} */
 
 const gatsbyConfig = {
   jsxRuntime: 'automatic',
