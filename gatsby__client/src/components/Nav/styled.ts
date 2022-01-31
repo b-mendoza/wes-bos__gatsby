@@ -6,12 +6,14 @@ export const StyledNav = styled.nav`
 `;
 
 export const StyledUl = styled.ul`
-  display: grid;
+  display: flex;
 
   align-items: center;
+  justify-content: space-between;
+
+  flex-wrap: wrap;
 
   gap: 2em;
-  grid-template-columns: repeat(2, 1fr) auto repeat(2, 1fr);
 
   text-align: center;
 `;
