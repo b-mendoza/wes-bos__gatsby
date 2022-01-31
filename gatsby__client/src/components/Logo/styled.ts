@@ -14,7 +14,7 @@ export const StyledLogo = styled.div`
 
   display: flex;
 
-  font-size: clamp(0.1rem, 0.65vw, 0.8rem);
+  font-size: clamp(0.1rem, 0.65vw, 0.6rem);
 
   height: 30em;
 
@@ -49,8 +49,6 @@ export const StyledH1 = styled.h1`
   gap: 2em;
 
   grid-row: 2 / span 2;
-
-  grid-template-rows: 8fr 2fr;
 
   transform: translateY(-0.7em);
 `;
