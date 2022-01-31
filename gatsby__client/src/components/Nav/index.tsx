@@ -1,4 +1,5 @@
 import { Routes } from '../../@types/shared';
+
 import Logo from '../Logo';
 
 import { StyledLink, StyledNav, StyledUl } from './styled';
@@ -9,9 +10,8 @@ interface Route {
 }
 
 const routes: Route[] = [
-  { path: Routes.IndexPage, text: 'Hot Now' },
-  { path: Routes.Pizzas, text: 'Pizza Menu' },
   { path: Routes.IndexPage, text: 'LOGO' },
+  { path: Routes.Pizzas, text: 'Pizza Menu' },
   { path: Routes.SliceMasters, text: 'SliceMasters' },
   { path: Routes.Order, text: 'Order Ahead' },
 ];
