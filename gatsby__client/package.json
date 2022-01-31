@@ -11,10 +11,10 @@
   "scripts": {
     "build": "cross-env NODE_OPTIONS=\"-r esm\" gatsby build",
     "clean": "gatsby clean",
+    "codegen": "graphql-codegen --config codegen.yml",
+    "codegen:watch": "graphql-codegen --config codegen.yml -w",
     "develop": "cross-env NODE_OPTIONS=\"-r esm\" gatsby develop",
     "format:write": "prettier -c --config .prettierrc . -w",
-    "generate-types": "graphql-codegen --config codegen.yml",
-    "generate-types:watch": "graphql-codegen --config codegen.yml -w",
     "netlify": "netlify dev",
     "prebuild": "netlify-lambda install",
     "serve": "cross-env NODE_OPTIONS=\"-r esm\" gatsby serve",
