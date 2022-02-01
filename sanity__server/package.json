@@ -11,12 +11,13 @@
     "start": "sanity start"
   },
   "dependencies": {
+    "@react-icons/all-files": "4.1.0",
     "@sanity/base": "2.25.4",
-    "@sanity/components": "2.14.0",
     "@sanity/core": "2.25.0",
     "@sanity/default-layout": "2.25.4",
     "@sanity/default-login": "2.24.1",
     "@sanity/desk-tool": "2.25.4",
+    "@sanity/eslint-config-studio": "2.0.0",
     "@sanity/google-maps-input": "2.25.4",
     "@sanity/structure": "2.24.0",
     "@sanity/vision": "2.25.4",
