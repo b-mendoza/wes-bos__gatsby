@@ -1,6 +1,6 @@
 {
-  "compilerOptions": { "allowJs": true, "noEmit": true },
   "extends": "./tsconfig.json",
+  "compilerOptions": { "allowJs": true, "noEmit": true },
   "include": [
     ".eslintrc.js",
     "gatsby-browser.js",
