@@ -10,41 +10,31 @@
     "lint": "eslint .",
     "start": "sanity start"
   },
-  "keywords": [
-    "sanity"
-  ],
-  "eslintConfig": {
-    "extends": [
-      "wesbos"
-    ]
-  },
   "dependencies": {
-    "@sanity/base": "1.150.7",
-    "@sanity/components": "1.150.7",
-    "@sanity/core": "1.150.7",
-    "@sanity/default-layout": "1.150.7",
-    "@sanity/default-login": "1.150.1",
-    "@sanity/desk-tool": "1.150.7",
-    "@sanity/google-maps-input": "1.150.1",
-    "@sanity/structure": "1.150.1",
-    "@sanity/vision": "1.150.6",
-    "prop-types": "^15.7",
-    "react": "^16.13",
-    "react-dom": "^16.13",
-    "react-icons": "^3.11.0"
+    "@sanity/base": "2.25.4",
+    "@sanity/components": "2.14.0",
+    "@sanity/core": "2.25.0",
+    "@sanity/default-layout": "2.25.4",
+    "@sanity/default-login": "2.24.1",
+    "@sanity/desk-tool": "2.25.4",
+    "@sanity/google-maps-input": "2.25.4",
+    "@sanity/structure": "2.24.0",
+    "@sanity/vision": "2.25.4",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "styled-components": "5.3.3"
   },
   "devDependencies": {
-    "babel-eslint": "^10.1.0",
-    "eslint": "^7.8.1",
-    "eslint-config-airbnb": "^18.2.0",
-    "eslint-config-prettier": "^6.11.0",
-    "eslint-config-wesbos": "^1.0.1",
-    "eslint-plugin-html": "^6.1.0",
-    "eslint-plugin-import": "^2.22.0",
-    "eslint-plugin-jsx-a11y": "^6.3.1",
-    "eslint-plugin-prettier": "^3.1.4",
-    "eslint-plugin-react": "^7.20.6",
-    "eslint-plugin-react-hooks": "^4.1.2",
-    "prettier": "^2.1.1"
+    "@types/node": "17.0.13",
+    "@typescript-eslint/eslint-plugin": "4.33.0",
+    "@typescript-eslint/parser": "4.33.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "8.3.0",
+    "eslint-config-standard-with-typescript": "21.0.1",
+    "eslint-plugin-import": "2.25.4",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-prettier": "4.0.0",
+    "eslint-plugin-promise": "5.2.0",
+    "prettier": "2.5.1"
   }
 }
