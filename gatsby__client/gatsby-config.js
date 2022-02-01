@@ -7,7 +7,7 @@ const gatsbyConfig = {
   plugins: [
     {
       resolve: 'gatsby-plugin-styled-components',
-      options: { displayName: true },
+      options: { displayName: process.env.NODE_ENV === 'development' },
     },
   ],
 };
