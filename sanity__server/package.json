@@ -1,13 +1,13 @@
 {
-  "name": "slicks-slices-backend",
+  "author": {
+    "email": "bmendoza.dev@hotmail.com",
+    "name": "Bryan Mendoza"
+  },
+  "license": "MIT",
+  "name": "slicks-slices__backend",
   "private": true,
   "version": "1.0.0",
-  "description": "",
-  "main": "package.json",
-  "author": "Wes Bos <wesbos@gmail.com>",
-  "license": "UNLICENSED",
   "scripts": {
-    "lint": "eslint .",
     "start": "sanity start"
   },
   "dependencies": {
