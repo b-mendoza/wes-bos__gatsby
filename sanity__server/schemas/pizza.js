@@ -53,5 +53,5 @@ export default {
   name: 'pizza',
   title: 'Pizzas',
   type: 'document',
-  fields: [NAME_FIELD, SLUG_FIELD, IMAGE_FIELD, NUMBER_FIELD],
+  fields: [NAME_FIELD, SLUG_FIELD, IMAGE_FIELD, NUMBER_FIELD, TOPPING_FIELD],
 };
