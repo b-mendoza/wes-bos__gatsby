@@ -21,9 +21,10 @@
     "target": "ES6"
   },
   "include": [
+    "globals.d.ts",
+    "./node_modules/@sanity/base/types/**/*.ts",
     "**/*.ts",
-    "**/*.tsx",
-    "./node_modules/@sanity/base/types/**/*.ts"
+    "**/*.tsx"
   ],
   "exclude": ["!./node_modules/@sanity/base/types/**/*.ts"]
 }
