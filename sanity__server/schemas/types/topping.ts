@@ -1,4 +1,5 @@
 import { FaPepperHot } from '@react-icons/all-files/fa/FaPepperHot';
+import { PreviewValue } from '@sanity/types';
 
 const NAME_FIELD = {
   description: 'Name of the Topping',
@@ -17,6 +18,11 @@ const VEGETERIAN_FIELD = {
   },
 };
 
+interface SelectedFields {
+  title: string;
+  isVegeterian: boolean;
+}
+
 export default {
   icon: FaPepperHot,
   name: 'topping',
@@ -28,7 +34,7 @@ export default {
       title: 'name',
       isVegeterian: 'isVegeterian',
     },
-    prepare(fields) {
+    prepare(fields: SelectedFields): PreviewValue {
       const { title, isVegeterian } = fields;
 
       return {

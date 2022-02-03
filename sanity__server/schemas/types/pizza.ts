@@ -1,4 +1,7 @@
 import { GiFullPizza } from '@react-icons/all-files/gi/GiFullPizza';
+import type { PreviewValue, Rule } from '@sanity/types';
+
+import PriceInput from '../../components/PriceInput';
 
 const NAME_FIELD = {
   description: 'Name of the Pizza',
@@ -29,11 +32,12 @@ const IMAGE_FIELD = {
 
 const NUMBER_FIELD = {
   description: 'Price of the Pizza',
+  initialValue: 1000,
+  inputComponent: PriceInput,
   name: 'price',
   title: 'Price',
   type: 'number',
-  validation: (Rule) => Rule.min(1000),
-  initialValue: 1000,
+  validation: (Rule: Rule): Rule => Rule.min(1000),
 };
 
 const TOPPING_FIELD = {
@@ -47,6 +51,12 @@ const TOPPING_FIELD = {
     },
   ],
 };
+
+interface SelectedFields {
+  media: string;
+  title: string;
+  [toppingName: string]: string | undefined;
+}
 
 export default {
   icon: GiFullPizza,
@@ -63,19 +73,19 @@ export default {
       toppingName2: 'toppings.2.name',
       toppingName3: 'toppings.3.name',
     },
-    prepare(fields) {
+    prepare(fields: SelectedFields): PreviewValue {
       const { media, title, ...toppingList } = fields;
 
       const filteredUndefinedValues = Object.values(toppingList).filter(
-        (value) => value !== undefined,
+        (value): value is string => Boolean(value),
       );
 
       const joinedToppingList = filteredUndefinedValues.join(', ');
 
       return {
         media,
-        title: fields.title,
         subtitle: joinedToppingList,
+        title: fields.title,
       };
     },
   },
