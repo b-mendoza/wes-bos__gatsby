@@ -33,6 +33,16 @@ const NUMBER_FIELD = {
   title: 'Price',
   type: 'number',
   validation: (Rule) => Rule.min(1000),
+const TOPPING_FIELD = {
+  name: 'toppings',
+  title: 'Toppings',
+  type: 'array',
+  of: [
+    {
+      type: 'reference',
+      to: [{ type: 'topping' }],
+    },
+  ],
 };
 
 export default {
