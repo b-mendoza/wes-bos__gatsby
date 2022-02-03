@@ -54,4 +54,29 @@ export default {
   title: 'Pizzas',
   type: 'document',
   fields: [NAME_FIELD, SLUG_FIELD, IMAGE_FIELD, NUMBER_FIELD, TOPPING_FIELD],
+  preview: {
+    select: {
+      media: 'image',
+      title: 'name',
+      toppingName0: 'toppings.0.name',
+      toppingName1: 'toppings.1.name',
+      toppingName2: 'toppings.2.name',
+      toppingName3: 'toppings.3.name',
+    },
+    prepare(fields) {
+      const { media, title, ...toppingList } = fields;
+
+      const filteredUndefinedValues = Object.values(toppingList).filter(
+        (value) => value !== undefined,
+      );
+
+      const joinedToppingList = filteredUndefinedValues.join(', ');
+
+      return {
+        media,
+        title: fields.title,
+        subtitle: joinedToppingList,
+      };
+    },
+  },
 };
