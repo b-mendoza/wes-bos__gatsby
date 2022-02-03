@@ -1,4 +1,4 @@
-import { MdLocalPizza } from '@react-icons/all-files/md/MdLocalPizza';
+import { GiFullPizza } from '@react-icons/all-files/gi/GiFullPizza';
 
 const NAME_FIELD = {
   description: 'Name of the Pizza',
@@ -18,7 +18,7 @@ const SLUG_FIELD = {
 };
 
 const IMAGE_FIELD = {
-  description: 'The Image of the Pizza',
+  description: 'Image of the Pizza',
   name: 'image',
   title: 'Image',
   type: 'image',
@@ -28,11 +28,14 @@ const IMAGE_FIELD = {
 };
 
 const NUMBER_FIELD = {
-  description: 'The Price of the Pizza',
+  description: 'Price of the Pizza',
   name: 'price',
   title: 'Price',
   type: 'number',
   validation: (Rule) => Rule.min(1000),
+  initialValue: 1000,
+};
+
 const TOPPING_FIELD = {
   name: 'toppings',
   title: 'Toppings',
@@ -46,9 +49,9 @@ const TOPPING_FIELD = {
 };
 
 export default {
-  icon: MdLocalPizza,
+  icon: GiFullPizza,
   name: 'pizza',
-  title: 'Pizza',
+  title: 'Pizzas',
   type: 'document',
   fields: [NAME_FIELD, SLUG_FIELD, IMAGE_FIELD, NUMBER_FIELD],
 };
