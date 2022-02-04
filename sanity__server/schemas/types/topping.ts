@@ -1,5 +1,5 @@
 import { FaPepperHot } from '@react-icons/all-files/fa/FaPepperHot';
-import { PreviewValue } from '@sanity/types';
+import type { PreviewValue } from '@sanity/types';
 
 const NAME_FIELD = {
   description: 'Name of the Topping',
